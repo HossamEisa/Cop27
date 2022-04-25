@@ -68,6 +68,14 @@
                 transition: 0.3s ease-in-out;
                 font-size: 5px;
                 color: #909090;
+
+                position: absolute;
+                right: 0;
+                top: 14px;
+
+                @include mq('lg') {
+                    position: static;
+                }
             }
         }
 
