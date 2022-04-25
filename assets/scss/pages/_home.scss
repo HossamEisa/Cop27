@@ -108,6 +108,7 @@
 .media-section {
     background-color: $brand-color;
     padding: calcRem(60) 0;
+    overflow: hidden;
 
     @include mq('lg') {
         padding: calcRem(80) 0;
