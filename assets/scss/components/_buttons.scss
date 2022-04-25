@@ -1,0 +1,38 @@
+.btn {
+    border-radius: 2px;
+    padding: calcRem(11) calcRem(33);
+    font-family: 'bold-font';
+}
+
+.btn-primary {
+    background-color: $brand-color;
+    position: relative;
+    color: $white;
+    border-color: $brand-color;
+
+    &:hover {
+        background-color: #937120;
+        border-color: #937120;
+    }
+
+    &:not(:disabled):not(.disabled):active {
+        background-color: #937120;
+        border-color: #937120;
+    }
+
+}
+
+.btn-outline-primary {
+    color: $brand-color;
+    border-color: $brand-color;
+
+    &:hover {
+        background-color: #937120;
+        border-color: #937120;
+    }
+
+    &:not(:disabled):not(.disabled):active {
+        background-color: #937120;
+        border-color: #937120;
+    }
+}

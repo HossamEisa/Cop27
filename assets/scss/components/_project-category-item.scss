@@ -1,0 +1,70 @@
+.project-category-item {
+    padding: calcRem(15);
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: calcRem(24);
+        border-radius: 2px;
+        color: $white;
+
+
+
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            backdrop-filter: blur(3px) brightness(1.5);
+            -webkit-backdrop-filter: blur(3px) brightness(1.5);
+        }
+
+        .title {
+            font-size: calcRem(24);
+            font-family: $bold-font;
+            margin-top: 10px;
+        }
+
+        a {
+            color: $white;
+            transition: 0.3 ease;
+            font-size: calcRem(13);
+            font-family: $medium-font;
+            text-transform: uppercase;
+        }
+    }
+
+    &.success {
+        .content {
+            background-color: rgb(117 175 109 / 80%);
+
+            .badge {
+                background-color: #E9F3EA;
+                color: $valid-color;
+            }
+        }
+    }
+
+    &.warning {
+        .content {
+            background-color: rgba(187, 144, 16, 0.8);
+
+            .badge {
+                background-color: #FFF8E5;
+                color: $brand-color;
+            }
+        }
+    }
+
+    &.primary {
+        .content {
+            background-color: rgba(0, 116, 188, 0.8);
+
+            .badge {
+                background-color: #E0F5FE;
+                color: $primary;
+            }
+        }
+    }
+}

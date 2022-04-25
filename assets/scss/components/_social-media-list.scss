@@ -1,0 +1,37 @@
+.social-media-list {
+    a {
+        color: $dark;
+        padding: calcRem(5) calcRem(14);
+        font-size: calcRem(22);
+        display: inline-flex;
+        transition: all 1s ease-in-out;
+
+        &.facebook {
+            &:hover {
+                color: $facebook;
+            }
+        }
+
+        &.twitter {
+            &:hover {
+                color: $twitter;
+            }
+        }
+
+        &.instagram {
+            &:hover {
+                color: $instagram;
+            }
+        }
+
+        &.linkedin {
+            &:hover {
+                color: $linkedin;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}

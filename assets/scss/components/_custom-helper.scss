@@ -1,0 +1,31 @@
+.section-title {
+    color: $dark;
+    font-family: $bold-font;
+    font-size: calcRem(48);
+    line-height: 1.3;
+    margin-bottom: calcRem(15);
+}
+
+.section-subtitle {
+    line-height: 1.3;
+    margin-bottom: 15px;
+    font-size: calcRem(20);
+}
+
+.section-link {
+    color: $dark;
+    transition: 0.3s ease;
+    text-decoration: underline;
+    font-family: $medium-font;
+
+    &:hover {
+        color: $brand-color;
+    }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}

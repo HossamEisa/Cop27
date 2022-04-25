@@ -1,0 +1,111 @@
+.signup-section {
+
+    >.container {
+        @media only screen and (max-width: 991px) {
+            padding: 0;
+            max-width: 100%;
+        }
+
+    }
+}
+
+.signup-form {
+    background-color: $brand-color;
+    position: relative;
+    min-height: calcRem(289);
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 991px) {
+        padding: 0 15px;
+    }
+
+    @include mq('lg') {
+        padding: calcRem(20) calcRem(100);
+    }
+
+    @include mq('xl') {
+        padding: calcRem(20) calcRem(120);
+    }
+
+    @include mq('xxl') {
+        padding: calcRem(20) calcRem(180);
+    }
+
+
+    .row {
+        width: 100%;
+    }
+
+    &::after,
+    &::before {
+        content: "";
+        top: 50%;
+        background-size: contain;
+        min-height: calcRem(150);
+        width: 80px;
+        position: absolute;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+
+
+        @include mq('xl') {
+            min-height: calcRem(289);
+            width: 140px;
+            top: 0;
+            transform: translateY(0);
+        }
+
+    }
+
+    &::after {
+        background-image: url('../images/signup-after.png');
+        left: 0;
+    }
+
+    &::before {
+        background-image: url('../images/signup-before.png');
+        right: 0;
+    }
+
+    .signupform-title {
+        color: $white;
+        font-size: calcRem(32);
+        font-family: $bold-font;
+    }
+
+    .custom-signup-input {
+        position: relative;
+
+        .form-control {
+            height: calcRem(64);
+            background-color: #FFF8E5;
+            padding-right: 100px;
+
+            @include mq('md') {
+                padding-right: 150px;
+
+            }
+
+            &::placeholder {
+                color: #B7BAC1;
+            }
+        }
+
+        .form-button {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+
+            button {
+                padding: 10px 5px;
+
+                @include mq('md') {
+                    padding: calcRem(11) calcRem(33);
+
+                }
+            }
+        }
+
+    }
+}

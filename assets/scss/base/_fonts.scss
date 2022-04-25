@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: primary-font;
+  src: url("../fonts/HelveticaNeue.ttf");
+}
+
+@font-face {
+  font-family: medium-font;
+  src: url("../fonts/HelveticaNeueMedium.ttf");
+}
+
+@font-face {
+  font-family: light-font;
+  src: url("../fonts/HelveticaNeueLight.ttf");
+}
+
+@font-face {
+  font-family: bold-font;
+  src: url("../fonts/HelveticaNeuBold.ttf");
+}

@@ -1,0 +1,44 @@
+.nav-with-separator {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+
+    .item {
+
+        position: relative;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 100%;
+            top: 0;
+            background: $moon-grey;
+            position: absolute;
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+
+        .link {
+            padding: calcRem(5) calcRem(10);
+            color: $dark;
+            font-family: $medium-font;
+            transition: .3s ease;
+            text-decoration: none;
+
+            &:hover {
+                color: $brand-color;
+            }
+
+        }
+    }
+}

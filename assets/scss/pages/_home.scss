@@ -1,0 +1,301 @@
+.hero-section {
+    overflow: hidden;
+    width: 100%;
+
+
+    @include mq('md') {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .info {
+        padding: calcRem(20) 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 50px;
+
+        .hashTags {
+            font-size: calcRem(18);
+            font-family: $bold-font;
+            text-transform: uppercase;
+            color: $dark;
+            display: block;
+        }
+
+        .section-title {
+            @include mq('xxl') {
+                padding-#{$right}: 250px;
+            }
+        }
+
+        .date {
+            font-size: calcRem(20);
+            font-family: $medium-font;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .separate {
+                font-family: $bold-font;
+                font-size: calcRem(30);
+                margin: 0 10px;
+
+            }
+        }
+
+        @include mq('lg') {
+            max-width: 540px;
+        }
+
+
+        @include mq('xl') {
+            max-width: 700px;
+            margin-left: auto;
+        }
+
+        @include mq('xxl') {
+            max-width: 900px;
+            margin-left: auto;
+        }
+    }
+
+    .slider {
+
+        position: relative;
+        width: 100%;
+        height: 300px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+        }
+
+        @include mq('md') {
+            height: 400px;
+
+            img {
+                height: 400px;
+            }
+        }
+
+        @include mq('lg') {
+            width: 460px;
+            height: 725px;
+
+            img {
+                width: 460px;
+                height: 725px;
+            }
+        }
+
+        @include mq('xl') {
+            width: 560px;
+            height: 725px;
+
+            img {
+                width: 560px;
+                height: 725px;
+            }
+        }
+    }
+
+
+}
+
+.media-section {
+    background-color: $brand-color;
+    padding: calcRem(60) 0;
+
+    @include mq('lg') {
+        padding: calcRem(80) 0;
+    }
+
+    @include mq('xl') {
+        padding: calcRem(127) 0;
+    }
+
+
+    .media-lightbox {
+        @include mq('lg') {
+            padding-right: calcRem(120);
+        }
+
+        .media-lighbox-link {
+            width: 280px;
+            margin: 0 auto;
+            border-radius: 2px;
+            position: relative;
+            display: flex;
+
+            @include mq('md') {
+                width: 80%;
+                margin: 0;
+            }
+
+            @include mq('lg') {
+                width: auto;
+            }
+
+            &::after {
+                position: absolute;
+                content: "\e903";
+                font-family: 'icomoon';
+                color: $white;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                background-color: rgba(25, 32, 47, 0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            img {
+                width: 100%;
+                object-fit: contain;
+                border-radius: 2px;
+            }
+        }
+    }
+
+
+    .media-info {
+        text-align: center;
+        color: $white;
+
+        @include mq('md') {
+            text-align: $left;
+        }
+
+        .question {
+            font-size: calcRem(18);
+        }
+
+        .ul-title {
+            font-size: calcRem(40);
+            font-family: $bold-font;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: $white;
+            font-size: calcRem(16);
+            font-family: $medium-font;
+            text-decoration: underline;
+            margin-top: calcRem(40);
+            transition: 0.3s ease;
+
+            &:hover {
+                color: $dark;
+            }
+        }
+    }
+}
+
+.recent-projects {
+    padding: calcRem(60) 0;
+    background-color: #F7F9FA;
+    overflow: hidden;
+    position: relative;
+
+    @include mq('lg') {
+        padding: calcRem(152) 0;
+
+    }
+
+    .swiper {
+        @include mq('sm') {
+            margin-right: -60px;
+        }
+
+        @include mq('md') {
+            margin-right: -100px;
+        }
+
+        @include mq('xl') {
+            margin-right: -100px;
+        }
+
+        @include mq('xxl') {
+            margin-right: -150px;
+        }
+
+        @media screen and (min-width: 1600px) {
+            margin-right: -230px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            margin-right: -320px;
+        }
+    }
+
+    .swiper-slide {
+        width: 280px;
+        height: 400px;
+
+        @include mq('sm') {
+            width: 360px;
+            height: 480px;
+        }
+    }
+
+    .controlls {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+
+        .button-prev,
+        .button-next {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 2px solid rgba(216, 216, 216, 0.75);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 4px;
+            transition: background 0.3s ease-in-out, color 0.3s ease;
+
+            &:hover {
+                background: $brand-color;
+                color: #fff;
+            }
+
+            &.swiper-button-disabled {
+                pointer-events: none;
+
+                span {
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}
+
+.news {
+    >.row {
+        border-top: 1px solid #EFF1F2;
+
+    }
+}
+
+.sponsors {
+    background-color: #F7F9FA;
+    padding: calcRem(118) 0;
+}
+
+.news,
+.sponsors,
+.discover-more,
+.signup-section {
+    overflow: hidden;
+}
+
+
+// signUp Form Section

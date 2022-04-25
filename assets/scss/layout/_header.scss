@@ -1,0 +1,97 @@
+.header {
+    filter: drop-shadow(0px 3px 16px rgb(0 0 0 / 10%));
+    background-color: $white;
+
+
+    .hamburger-lines {
+        height: 26px;
+        width: 32px;
+        top: 17px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .line {
+            display: block;
+            height: 4px;
+            width: 100%;
+            border-radius: 10px;
+            background: #0e2431;
+        }
+
+        .line1 {
+            transform-origin: 0% 0%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .line2 {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .line3 {
+            transform-origin: 0% 100%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+
+    }
+
+    .navbar-toggler {
+        padding: 0;
+        border: none;
+    }
+
+    .navbar-toggler[aria-expanded="true"] {
+        .line1 {
+            transform: rotate(45deg);
+        }
+
+        .line2 {
+            transform: scaleY(0);
+        }
+
+        .line3 {
+            transform: rotate(-45deg);
+        }
+    }
+
+
+
+    .dropdown {
+        .dropdown-toggle {
+            &::after {
+                content: "\e904";
+                font-family: 'icomoon';
+                border: none;
+                transition: 0.3s ease-in-out;
+                font-size: 7px;
+            }
+        }
+
+        &.show {
+            .dropdown-toggle {
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #050505;
+        font-size: calcRem(15);
+        &:hover {
+            color: $brand-color;
+        }
+
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .show>.nav-link {
+
+        color: $brand-color;
+    }
+}

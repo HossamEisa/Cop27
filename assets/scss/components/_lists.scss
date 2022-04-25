@@ -1,0 +1,157 @@
+.ul-bullets {
+    list-style: disc;
+
+    li {
+        font-size: calcRem(16);
+        margin-bottom: 10px;
+
+        a {
+            color: $white;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.hv-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $moon-grey;
+    text-decoration: none;
+    position: relative;
+    border-radius: 2px;
+    padding: calcRem(20);
+    color: $dark;
+    min-height: 268px;
+    font-size: calcRem(14);
+    line-height: 1.5;
+
+    @include mq('xl') {
+        padding: calcRem(30);
+    }
+
+    * {
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .title {
+        font-size: calcRem(16);
+        font-family: $bold-font;
+        margin: 10px 0 15px 0;
+    }
+
+    .text {
+        margin-bottom: 10px;
+        @include ellipse-rows(3);
+
+        @include mq('xl') {
+            padding: 0px 25px 0 1px;
+        }
+
+    }
+
+
+    &::after {
+        content: "";
+        height: 3px;
+        border-radius: 2px;
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    &:hover {
+        color: $white;
+        text-decoration: none;
+
+        img {
+            filter: contrast(2) brightness(10);
+        }
+
+        &::after {
+            height: 100%;
+        }
+    }
+
+    &.success {
+        background-color: #E9F3EA;
+
+        [class^=icon] {
+            color: $valid-color;
+        }
+
+        &::after {
+            background-color: $valid-color;
+        }
+
+        &:hover {
+            [class^=icon] {
+                color: $white;
+            }
+        }
+    }
+
+    &.warning {
+        background-color: #FFF8E5;
+
+        [class^=icon] {
+            color: $brand-color;
+        }
+
+        &::after {
+            background-color: $brand-color;
+        }
+
+        &:hover {
+            img {
+                filter: brightness(26);
+            }
+
+            [class^=icon] {
+                color: $white;
+            }
+        }
+    }
+
+    &.primary {
+        background-color: #FFF8E5;
+
+        .hover-show {
+            display: none;
+        }
+
+        [class^=icon] {
+            color: $primary;
+        }
+
+        &::after {
+            background-color: $primary;
+        }
+
+        &:hover {
+            .hover-show {
+                display: block;
+            }
+
+            .unhover {
+                display: none;
+            }
+
+            img {
+                filter: invert(1);
+            }
+
+            [class^=icon] {
+                color: $white;
+            }
+        }
+    }
+
+}

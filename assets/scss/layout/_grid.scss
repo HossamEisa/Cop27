@@ -1,0 +1,5 @@
+.container {
+    @include mq('xxl') {
+        max-width: 1310px;
+    }
+} 
