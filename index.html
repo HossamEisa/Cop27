@@ -26,8 +26,23 @@
 <body>
     <div class="wrapper">
         <header id="header" class="header fixed-top">
+            <div class="count-down-area">
+                <div class="container">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div id="countdown">
+                            <ul class="timer">
+                                <li><span class="icon-clock"></span> <span id="days"></span> <span class="text">days</span></li>
+                                <li><span id="hours"></span><span class="text">Hours</span></li>
+                                <li><span id="minutes"></span><span class="text">Minutes</span></li>
+                                <li><span id="seconds"></span><span class="text">Seconds</span></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn btn-light btn-sm btn-schedule">View Schedule </a>
+                    </div>
+                </div>
+            </div>
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light p-1">
                     <a class="navbar-brand mr-xl-5" href="#">
                         <img src="./assets/images/logo.png" alt="" width="168">
                     </a>
@@ -48,11 +63,11 @@
                                     data-toggle="dropdown" aria-expanded="false">
                                     EG Presidency
                                 </a>
-                                <div class="dropdown-menu fadeInUp animated" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item disabled" href="#">Something else here</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -60,7 +75,7 @@
                                     data-toggle="dropdown" aria-expanded="false">
                                     COP27 Goals
                                 </a>
-                                <div class="dropdown-menu fadeInUp animated" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
                                     <div class="dropdown-divider"></div>
@@ -72,7 +87,7 @@
                                     data-toggle="dropdown" aria-expanded="false">
                                     Conference
                                 </a>
-                                <div class="dropdown-menu fadeInUp animated" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
                                     <div class="dropdown-divider"></div>
@@ -84,7 +99,7 @@
                                     data-toggle="dropdown" aria-expanded="false">
                                     Useful Information
                                 </a>
-                                <div class="dropdown-menu fadeInUp animated" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
                                     <div class="dropdown-divider"></div>
@@ -538,8 +553,36 @@
                     <h2 class="section-title text-center" data-aos="fade-right">Discover more</h2>
                     <p class="section-subtitle text-center" data-aos="fade-up">Global Goal for Adaptation must be
                         locally driven</p>
+
+                    <div class="row mt-5 pt-3">
+                        <div class="col-md-6 mb-5" data-aos="fade-right">
+                            <div class="brochure blue-card">
+                                <h2>COP27 Brochure</h2>
+                                <p>Global Goal for Adaptation must be locally driven</p>
+
+                                <a href="#" class="download">
+                                    <span class="icon-download-svgrepo-com"></span>
+                                    Download COP27 Brochure</a>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-5" data-aos="fade-left">
+                            <div class="brochure green-card">
+                                <h2>Download the App</h2>
+                                <p>Global Goal for Adaptation must be locally driven</p>
+                                <form>
+                                    <a href="#"><img src="./assets/images/appstore.png" width="196" height="59"
+                                            alt="apple"></a>
+                                    <a href="#"><img src="./assets/images/google-play-logo.png" width="196" height="59"
+                                            alt="google-play"></a>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
+
             <!-- /Discover ME -->
             <section class="signup-section">
                 <div class="container">

@@ -299,3 +299,79 @@
 
 
 // signUp Form Section
+
+
+
+/*start discover*/
+
+.discover-more {
+    padding-top: calcRem(40);
+    padding-bottom: calcRem(30);
+    overflow: hidden;
+
+    @include mq('md') {
+        padding-top: calcRem(60);
+    }
+
+    @include mq('xl') {
+        padding-top: calcRem(118);
+
+    }
+
+    .brochure {
+        text-align: center;
+        padding-top: 20px;
+        width: 100%;
+        padding: calcRem(70) calcRem(20);
+        height: 100%;
+
+        &.blue-card {
+            background-color: $primary;
+        }
+
+        &.green-card {
+            background-color: $valid-color;
+        }
+
+        h2 {
+            color: $white;
+            font-family: $bold-font;
+            font-size: calcRem(32);
+        }
+
+        p {
+            color: $white;
+            font-size: calcRem(20);
+            line-height: 1.7;
+            margin: 0 auto 33px;
+
+            @include mq('xl') {
+                width: 49%;
+            }
+        }
+
+        .download {
+            background-color: $white;
+            padding: 11px 54px;
+            text-decoration: none;
+            color: $primary;
+            font-family: $medium-font;
+            border-radius: 2px;
+            transition: 0.3s ease;
+            display: inline-block;
+
+            &:hover {
+                background-color: $brand-color;
+                color: $white;
+            }
+        }
+
+        a {
+            img {
+                object-fit: contain;
+                aspect-ratio: 1;
+            }
+        }
+    }
+
+}
