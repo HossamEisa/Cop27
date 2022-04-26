@@ -1,23 +1,47 @@
 .introdaction-content {
     padding-top: 40px;
 
-    .title {
-        font-size: calcRem(28);
-        font-family: $bold-font;
-        line-height: 1.4;
-        margin-bottom: 20px;
-    }
+
 
     .content {
         font-size: calcRem(20);
         font-family: $medium-font;
         line-height: 25px;
+
+        .title {
+            font-size: calcRem(28);
+            font-family: $bold-font;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
         p {
             margin-bottom: calcRem(40);
 
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+    }
+}
+
+.keynotes {
+    background-color: #E1F5FE;
+    padding: calcRem(28) calcRem(25) calcRem(45);
+
+    .keynotes-title {
+        font-size: calcRem(24);
+        font-family: $bold-font;
+        margin-bottom: calcRem(24);
+    }
+
+    .keynotes-link {
+        font-family: $bold-font;
+        color: $dark;
+        text-decoration: underline;
+        transition: 0.3s ease;
+        &:hover {
+            color: $brand-color;
         }
     }
 }

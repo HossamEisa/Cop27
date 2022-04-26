@@ -5,6 +5,39 @@
 }
 
 .btn-primary {
+    background-color: $primary;
+    position: relative;
+    color: $white;
+    border-color: $primary;
+
+    &:hover {
+        background-color: #0a6dab;
+        border-color: #0a6dab;
+    }
+
+    &:not(:disabled):not(.disabled):active {
+        background-color: #0a6dab;
+        border-color: #0a6dab;
+    }
+
+}
+
+.btn-outline-primary {
+    color: $primary;
+    border-color: $primary;
+
+    &:hover {
+        background-color: #0a6dab;
+        border-color: #0a6dab;
+    }
+
+    &:not(:disabled):not(.disabled):active {
+        background-color: #0a6dab;
+        border-color: #0a6dab;
+    }
+}
+
+.btn-warning {
     background-color: $brand-color;
     position: relative;
     color: $white;
@@ -13,26 +46,30 @@
     &:hover {
         background-color: #937120;
         border-color: #937120;
+        color: $white;
     }
 
     &:not(:disabled):not(.disabled):active {
         background-color: #937120;
         border-color: #937120;
+        color: $white;
     }
 
 }
 
-.btn-outline-primary {
+.btn-outline-warning {
     color: $brand-color;
     border-color: $brand-color;
 
     &:hover {
         background-color: #937120;
         border-color: #937120;
+        color: $white;
     }
 
     &:not(:disabled):not(.disabled):active {
         background-color: #937120;
         border-color: #937120;
+        color: $white;
     }
 }

@@ -295,6 +295,12 @@
 .sponsors {
     background-color: #F7F9FA;
     padding: calcRem(118) 0;
+    overflow: hidden;
+}
+
+.partners {
+    padding: calcRem(100) 0;
+    overflow: hidden;
 }
 
 .news,
