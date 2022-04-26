@@ -1,4 +1,4 @@
-# Com27
+# Cop27
 
 <p>Here is the Test Page build with:</p>
 <ul>
