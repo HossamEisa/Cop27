@@ -1,0 +1,20 @@
+{
+    "name": "oup",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass --watch assets/scss/style.scss:assets/css/style.css --style compressed",
+        "cc": "node tools/commands/create_component.js"
+    },
+    "author": "Link Development",
+    "license": "ISC",
+    "dependencies": {
+        "sass": "^1.51.0",
+        "sass-migrator": "^1.4.0"
+    }
+}

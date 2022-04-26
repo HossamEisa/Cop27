@@ -1,0 +1,42 @@
+.banner-bk {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+
+    @include mq('md') {
+        min-height: 350px;
+    }
+
+    @include mq('xl') {
+        min-height: 576px;
+    }
+
+    .banner-title {
+        position: relative;
+        z-index: 2;
+        color: $white;
+        font-size: calcRem(42);
+        font-family: $bold-font;
+
+        @include mq('md') {
+            font-size: calcRem(55);
+        }
+
+        @include mq('xl') {
+            font-size: calcRem(72);
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 110, 183, 0.35);
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+}

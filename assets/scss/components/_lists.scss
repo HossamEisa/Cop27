@@ -25,9 +25,12 @@
     border-radius: 2px;
     padding: calcRem(20);
     color: $dark;
-    min-height: 268px;
     font-size: calcRem(14);
     line-height: 1.5;
+
+    @include mq('lg') {
+        min-height: 268px;
+    }
 
     @include mq('xl') {
         padding: calcRem(30);
@@ -121,7 +124,7 @@
     }
 
     &.primary {
-        background-color: #FFF8E5;
+        background-color: #E1F5FE;
 
         .hover-show {
             display: none;

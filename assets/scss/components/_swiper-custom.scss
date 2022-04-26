@@ -15,5 +15,10 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: 40px;
+    bottom: 20px;
+
+    @include mq('lg') {
+        bottom: 40px;
+
+    }
 }

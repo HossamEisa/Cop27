@@ -21,6 +21,7 @@
 
 @import 'base/base',
 'base/fonts',
+'base/typography',
 'base/rest';
 
 ////////////////////////////////////////////////////////
@@ -40,15 +41,17 @@
 "components/loader",
 "components/lists",
 "components/backToTop",
+"components/swiper-custom",
 "components/social-media-list",
 "components/signup-form",
 "components/sponsors",
 "components/news-card",
 "components/project-category-item",
 "components/nav-with-separator",
-"components/swiper-custom";
+"components/banner";
 
 ////////////////////////////////////////////////////////
 // 6. Pages
 ////////////////////////////////////////////////////////
-@import "pages/home.scss";
+@import "pages/home";
+@import "pages/introduction";

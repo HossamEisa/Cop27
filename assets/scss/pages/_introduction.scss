@@ -1,0 +1,23 @@
+.introdaction-content {
+    padding-top: 40px;
+
+    .title {
+        font-size: calcRem(28);
+        font-family: $bold-font;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        font-size: calcRem(20);
+        font-family: $medium-font;
+        line-height: 25px;
+        p {
+            margin-bottom: calcRem(40);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
