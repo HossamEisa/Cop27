@@ -17,6 +17,6 @@ Downloade node js latest version before start
 
 <ul>
     <li>Clone or Download files.</li>
-    <li>run <code>npm install</code> at project root in terminl.</li>
+    <li>run <code>npm install</code> at project root in terminal.</li>
     <li>run <code>npm run sass</code> to start sass compiler</li>
 </ul>
