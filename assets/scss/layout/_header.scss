@@ -55,9 +55,16 @@
         }
     }
 
-    .nav-link {
-        padding: 0.5rem calcRem(11);
+    .nav-item {
+        @include mq('lg') {
+            margin-bottom: 0;
+        }
+
+        .nav-link {
+            padding: 0.5rem calcRem(11);
+        }
     }
+
 
     .dropdown {
         .dropdown-toggle {
