@@ -62,14 +62,14 @@
     border-color: $brand-color;
 
     &:hover {
-        background-color: #937120;
-        border-color: #937120;
+        background-color: $brand-color;
+        border-color: $brand-color;
         color: $white;
     }
 
     &:not(:disabled):not(.disabled):active {
-        background-color: #937120;
-        border-color: #937120;
+        background-color: $brand-color;
+        border-color: $brand-color;
         color: $white;
     }
 }
