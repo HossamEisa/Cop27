@@ -56,21 +56,39 @@ AOS.init({
 // Swiper  Init 
 ////////////////////////////////////////////
 // Hero
-var swiper = new Swiper(".hero-swiper", {
+
+
+var heroSwiperText = new Swiper(".hero-swiper-text", {
     speed: 1000,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    watchSlidesProgress: true,
+    thumbs: {
+        swiper: heroSwiper,
+    },
+
+});
+heroSwiperText.on("slideChange", (e) => {
+    var slideIndex = e.activeIndex;
+    console.log(slideIndex);
+
+    heroSwiperText.slideTo(slideIndex);
+    heroSwiper.slideTo(slideIndex);
+});
+var heroSwiper = new Swiper(".hero-swiper", {
+    speed: 1000,
+    autoplay: {
+        delay: 5000,
+    },
     pagination: {
         el: ".hero-swiper .swiper-pagination",
         clickable: true,
-
+    },
+    thumbs: {
+        swiper: heroSwiperText,
     },
 });
 
-
 // Projects
-var swiper = new Swiper(".projects-swiper", {
+var projectsSwiper = new Swiper(".projects-swiper", {
     slidesPerView: "auto",
     spaceBetween: 30,
     freeMode: true,
