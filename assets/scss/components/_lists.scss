@@ -30,7 +30,7 @@ ul {
     text-decoration: none;
     position: relative;
     border-radius: 2px;
-    padding: calcRem(20);
+    padding: calcRem(20) calcRem(15) calcRem(15);
     color: $dark;
     font-size: calcRem(14);
     line-height: 1.5;
@@ -40,7 +40,7 @@ ul {
     }
 
     @include mq('xl') {
-        padding: calcRem(30);
+        padding: calcRem(30) calcRem(15) calcRem(15);
     }
 
     * {

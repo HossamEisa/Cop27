@@ -112,13 +112,13 @@
             font-size: calcRem(24);
             font-family: $bold-font;
             line-height: 1.1;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             @include ellipse-rows(2);
 
         }
 
         p {
-            line-height: 22px;
+            line-height: 25px;
             @include ellipse-rows(7);
             font-family: $medium-font;
 
