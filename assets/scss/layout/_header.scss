@@ -64,6 +64,13 @@
 
         .nav-link {
             padding: 0.5rem 0;
+            font-family: $medium-font;
+            color: $black;
+            font-size: calcRem(15);
+    
+            &:hover {
+                color: $primary;
+            }
         }
     }
 
@@ -116,15 +123,6 @@
     }
 
 
-    .navbar-light .navbar-nav .nav-link {
-        color: $black;
-        font-size: calcRem(15);
-
-        &:hover {
-            color: $brand-color;
-        }
-
-    }
 
     .navbar-light .navbar-nav .active>.nav-link,
     .navbar-light .navbar-nav .nav-link.active,
