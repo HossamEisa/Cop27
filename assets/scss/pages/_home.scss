@@ -49,17 +49,17 @@
         }
 
         @include mq('lg') {
-            max-width: 540px;
+            max-width: 500px;
         }
 
 
         @include mq('xl') {
-            max-width: 700px;
+            max-width: 600px;
             margin-left: auto;
         }
 
         @include mq('xxl') {
-            max-width: 900px;
+            max-width: 800px;
             margin-left: auto;
         }
     }
