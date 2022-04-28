@@ -64,13 +64,9 @@ var heroSwiperText = new Swiper(".hero-swiper-text", {
     thumbs: {
         swiper: heroSwiper,
     },
-
 });
 heroSwiperText.on("slideChange", (e) => {
     var slideIndex = e.activeIndex;
-    console.log(slideIndex);
-
-    heroSwiperText.slideTo(slideIndex);
     heroSwiper.slideTo(slideIndex);
 });
 var heroSwiper = new Swiper(".hero-swiper", {
@@ -120,7 +116,7 @@ var projectsSwiper = new Swiper(".projects-swiper", {
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
-        dayMonth = "09/30/",
+        dayMonth = "08/30/",
         birthday = dayMonth + yyyy;
 
     today = mm + "/" + dd + "/" + yyyy;
