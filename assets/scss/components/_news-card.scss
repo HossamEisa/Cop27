@@ -120,6 +120,7 @@
         p {
             line-height: 22px;
             @include ellipse-rows(7);
+            font-family: $medium-font;
 
         }
 

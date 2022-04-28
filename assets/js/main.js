@@ -58,17 +58,17 @@ AOS.init({
 // Hero
 
 
-var heroSwiperText = new Swiper(".hero-swiper-text", {
-    speed: 1000,
-    watchSlidesProgress: true,
-    thumbs: {
-        swiper: heroSwiper,
-    },
-});
-heroSwiperText.on("slideChange", (e) => {
-    var slideIndex = e.activeIndex;
-    heroSwiper.slideTo(slideIndex);
-});
+// var heroSwiperText = new Swiper(".hero-swiper-text", {
+//     speed: 1000,
+//     watchSlidesProgress: true,
+//     thumbs: {
+//         swiper: heroSwiper,
+//     },
+// });
+// heroSwiperText.on("slideChange", (e) => {
+//     var slideIndex = e.activeIndex;
+//     heroSwiper.slideTo(slideIndex);
+// });
 var heroSwiper = new Swiper(".hero-swiper", {
     speed: 1000,
     autoplay: {
@@ -79,7 +79,7 @@ var heroSwiper = new Swiper(".hero-swiper", {
         clickable: true,
     },
     thumbs: {
-        swiper: heroSwiperText,
+        // swiper: heroSwiperText,
     },
 });
 

@@ -17,6 +17,8 @@
 
         p {
             margin-bottom: calcRem(40);
+            font-family: $primary-font;
+            font-size: calcRem(20);
 
             &:last-child {
                 margin-bottom: 0;
@@ -40,6 +42,7 @@
         color: $dark;
         text-decoration: underline;
         transition: 0.3s ease;
+
         &:hover {
             color: $brand-color;
         }
