@@ -37,15 +37,19 @@
     }
 
     .title {
-        font-size: calcRem(20);
+        font-size: calcRem(18);
         font-family: $medium-font;
         color: $dark;
+
+        @include mq('md') {
+            font-size: calcRem(20);
+        }
     }
 
     &:hover {
         a {
             .title {
-                color: $brand-color;
+                text-decoration: underline;
             }
         }
     }

@@ -373,7 +373,6 @@
         }
 
         .download {
-            background-color: $white;
             padding: 11px 54px;
             text-decoration: none;
             color: $primary;
@@ -381,11 +380,6 @@
             border-radius: 2px;
             transition: 0.3s ease;
             display: inline-block;
-
-            &:hover {
-                background-color: $brand-color;
-                color: $white;
-            }
         }
 
         a {
