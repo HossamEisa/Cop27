@@ -1,9 +1,12 @@
 .section-title {
     color: $dark;
     font-family: $bold-font;
-    font-size: calcRem(48);
+    font-size: calcRem(35);
     line-height: 1.3;
-    margin-bottom: calcRem(15);
+
+    @include mq('lg') {
+        font-size: calcRem(48);
+    }
 }
 
 .section-subtitle {

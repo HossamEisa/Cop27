@@ -4,7 +4,6 @@
 
 
     .content {
-        font-size: calcRem(20);
         font-family: $medium-font;
         line-height: 25px;
 
@@ -18,7 +17,6 @@
         p {
             margin-bottom: calcRem(40);
             font-family: $primary-font;
-            font-size: calcRem(20);
 
             &:last-child {
                 margin-bottom: 0;

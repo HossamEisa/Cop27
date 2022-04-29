@@ -44,11 +44,11 @@ scrollBtnX.addEventListener("click", () => {
 // Animation AOs Init Scrolling
 ////////////////////////////////////////////
 
-AOS.init({
-    duration: 1500,
-    // offset: 50,
-    // once: true,
-});
+// AOS.init({
+//     duration: 1500,
+//     // offset: 50,
+//     // once: true,
+// });
 
 
 
