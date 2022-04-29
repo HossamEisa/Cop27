@@ -5,13 +5,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 250px;
+    margin-bottom: calcRem(40);
 
     @include mq('md') {
+        margin-bottom: calcRem(60);
         min-height: 350px;
+
     }
+
+    @include mq('lg') {
+        margin-bottom: calcRem(80);
+    }
+
 
     @include mq('xl') {
         min-height: 576px;
+        margin-bottom: calcRem(110);
     }
 
     .banner-title {
