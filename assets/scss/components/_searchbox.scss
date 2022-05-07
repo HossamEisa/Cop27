@@ -1,0 +1,33 @@
+.searchbox-wrap {
+    display: flex;
+    width: 100%;
+    position: relative;
+
+
+    input {
+        flex: 1;
+        font-size: 1.1em;
+        height: 48px;
+        border-color: $dark;
+    }
+
+    button {
+        padding-right: 10px;
+
+        background-color: $dark;
+        color: $white;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 8px;
+        height: 32px;
+        font-family: $medium-font;
+        text-transform: uppercase;
+        top: 8px;
+
+        &:hover {
+            background-color: $black;
+        }
+
+    }
+}

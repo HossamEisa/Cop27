@@ -173,4 +173,11 @@ var projectsSwiper = new Swiper(".projects-swiper", {
         });
         return false;
     });
+
+
+
+
+    $(document).ready(function () {
+        $('select').niceSelect();
+    });
 })(jQuery);

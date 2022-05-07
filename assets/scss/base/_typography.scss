@@ -1,19 +1,30 @@
-
 .text-sm {
     font-size: calcRem(14);
 }
+
 .text-md {
     font-size: calcRem(16);
 }
+
 .text-lg {
     font-size: calcRem(18);
 }
+
 .text-xl {
     font-size: calcRem(20);
 }
+
 .text-xxl {
     font-size: calcRem(22);
 }
+
 .text-xxxl {
     font-size: calcRem(23);
+}
+
+.font-b {
+    font-family: $bold-font;
+}
+.font-m {
+    font-family: $medium-font;
 }

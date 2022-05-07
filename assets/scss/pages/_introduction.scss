@@ -13,6 +13,7 @@
         p {
             margin-bottom: calcRem(40);
             font-family: $primary-font;
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -22,7 +23,7 @@
 
 .keynotes {
     background-color: #E1F5FE;
-    padding: calcRem(28) calcRem(25) calcRem(45);
+    padding: calcRem(28) calcRem(25) calcRem(35);
 
     .keynotes-title {
         font-size: calcRem(24);
@@ -39,5 +40,9 @@
         &:hover {
             color: $brand-color;
         }
+    }
+
+    &.warning {
+        background-color: #FFF8E5;
     }
 }

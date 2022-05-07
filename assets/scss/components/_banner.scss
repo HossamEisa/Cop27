@@ -48,4 +48,85 @@
         width: 100%;
         left: 0;
     }
+
+    &.yellow-overlay {
+        &::after {
+            background-color: rgb(187 143 16 / 20%);
+        }
+    }
+}
+
+.banner-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 250px;
+    margin-bottom: calcRem(40);
+    background-color: #E9F3EA;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.35);
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+
+        @include mq('lg') {
+            display: none;
+        }
+    }
+
+    @include mq('md') {
+        margin-bottom: calcRem(60);
+        min-height: 350px;
+    }
+
+    @include mq('lg') {
+        margin-bottom: calcRem(80);
+        background-size: 50% 100%;
+        color: $dark;
+
+    }
+
+
+    @include mq('xl') {
+        min-height: 500px;
+        margin-bottom: calcRem(110);
+        background-size: 700px 100%;
+    }
+
+    .banner-title {
+        position: relative;
+        z-index: 2;
+        font-size: calcRem(42);
+        font-family: $bold-font;
+
+        @include mq('md') {
+            font-size: calcRem(55);
+        }
+
+        @include mq('xl') {
+            font-size: calcRem(72);
+        }
+    }
+
+    .banner-subtitle {
+        position: relative;
+        z-index: 2;
+        font-size: calcRem(20);
+
+        @include mq('md') {
+            font-size: calcRem(24);
+        }
+
+        @include mq('xl') {
+            font-size: calcRem(32);
+        }
+    }
 }

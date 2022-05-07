@@ -13,7 +13,8 @@
 ////////////////////////////////////////////////////////
 
 // @import "vendors/icons";
-@import "vendors/_icomoon";
+@import "vendors/_icomoon",
+"vendors/nice-select";
 
 ////////////////////////////////////////////////////////
 // 3. Base stuff
@@ -49,6 +50,9 @@
 "components/project-category-item",
 "components/nav-with-separator",
 "components/video-item",
+"components/label",
+"components/searchbox",
+"components/card-custom",
 "components/banner";
 
 ////////////////////////////////////////////////////////

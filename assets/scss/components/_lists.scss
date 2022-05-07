@@ -2,6 +2,7 @@
     li {
         font-family: $medium-font;
         margin-bottom: 15px;
+
         a {
             color: $dark;
         }
@@ -11,9 +12,9 @@
 .ul-bullets {
     list-style: disc;
     padding-#{$left}: 15px;
+
     li {
         font-size: calcRem(16);
-        margin-bottom: 10px;
 
         a {
             color: $white;
@@ -23,6 +24,7 @@
             margin-bottom: 0;
         }
     }
+
 }
 
 .hv-list {
@@ -167,4 +169,36 @@
         }
     }
 
+}
+
+// Auto Numirc List Ol
+
+.num-list {
+
+    counter-reset: numList;
+
+    li {
+        position: relative;
+        padding-left: 42px;
+        margin-bottom: calcRem(25);
+        font-family: $medium-font;
+        font-size: calcRem(20);
+
+        &::before {
+            counter-increment: numList;
+            content: counter(numList);
+            counter-increment: numList;
+            content: counter(numList);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #F8ECCA;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            color: $dark;
+        }
+    }
 }
