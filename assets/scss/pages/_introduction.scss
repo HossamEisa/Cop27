@@ -11,7 +11,7 @@
         }
 
         p {
-            margin-bottom: calcRem(40);
+            margin-bottom: calcRem(20);
             font-family: $primary-font;
 
             &:last-child {
@@ -44,5 +44,8 @@
 
     &.warning {
         background-color: #FFF8E5;
+    }
+    &.success {
+        background-color: #EFF6F0;
     }
 }

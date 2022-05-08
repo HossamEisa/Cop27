@@ -1,7 +1,81 @@
+.card-img {
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 10px #00000038;
+    }
+
+    .image {
+        border-bottom: 1px solid rgba(0, 0, 0, .125);
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+
+        @include mq('xl') {
+            padding: 50px 30px;
+            min-height: 212px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .card-body {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 27px 32px;
+
+        .content {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding-bottom: calcRem(45);
+        }
+
+        .card-title {
+            font-size: calcRem(24);
+            font-family: $bold-font;
+        }
+
+        .card-text {
+            line-height: 1.4;
+        }
+    }
+
+    // link
+    .card-link {
+        color: $dark;
+        display: flex;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+        font-size: calcRem(14);
+        font-family: $medium-font;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
 .custom-card {
     border: none;
     border-bottom: 3px solid $dark;
     border-radius: 0;
+    transition: .3s ease;
 
     .card-body {
         padding: 15px 0 25px;
@@ -45,6 +119,23 @@
             &:hover {
                 background-color: #c5ccd1;
                 ;
+            }
+        }
+    }
+
+    &:hover {
+        border-bottom: 3px solid $primary;
+
+        .card-body {
+
+            .card-title,
+            .card-text {
+                text-decoration: underline;
+            }
+
+            .badge-light {
+                background-color: $primary;
+                color: $white;
             }
         }
     }

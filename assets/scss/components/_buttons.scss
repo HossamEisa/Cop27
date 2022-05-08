@@ -73,3 +73,23 @@
         color: $white;
     }
 }
+
+
+
+.btn-success {
+    background-color: $valid-color;
+    position: relative;
+    color: $white;
+    border-color: $valid-color;
+
+    &:hover {
+        background-color: #34b34f;
+        border-color: #34b34f;
+    }
+
+    &:not(:disabled):not(.disabled):active {
+        background-color: #34b34f;
+        border-color: #34b34f;
+    }
+
+}

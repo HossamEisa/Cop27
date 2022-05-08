@@ -67,6 +67,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: $white;
+    padding: 25px 0;
 
     &::after {
         content: "";
@@ -129,4 +130,92 @@
             font-size: calcRem(32);
         }
     }
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 250px;
+    margin-bottom: calcRem(40);
+    background-color: #FFF8E5;
+    color: $dark;
+    padding: 25px 0;
+
+    @include mq('md') {
+        margin-bottom: calcRem(60);
+        min-height: 350px;
+    }
+
+    @include mq('lg') {
+        margin-bottom: calcRem(80);
+
+    }
+
+
+    @include mq('xl') {
+        min-height: 500px;
+        margin-bottom: calcRem(110);
+    }
+
+    .content {
+        @include mq('lg') {
+            max-width: 80%;
+        }
+    }
+
+    .banner-title {
+        position: relative;
+        z-index: 2;
+        font-size: calcRem(42);
+        font-family: $bold-font;
+
+        @include mq('md') {
+            font-size: calcRem(55);
+        }
+
+        @include mq('xl') {
+            font-size: calcRem(72);
+        }
+    }
+
+    .banner-subtitle {
+        position: relative;
+        z-index: 2;
+        font-size: calcRem(20);
+
+        @include mq('md') {
+            font-size: calcRem(24);
+        }
+    }
+}
+
+// banner container
+
+.banner-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: calcRem(40);
+
+    img {
+        object-fit: cover;
+    }
+
+    @include mq('md') {
+        margin-bottom: calcRem(60);
+        min-height: 350px;
+    }
+
+    @include mq('lg') {
+        margin-bottom: calcRem(80);
+        color: $dark;
+
+    }
+
+    @include mq('xl') {
+        min-height: 500px;
+        margin-bottom: calcRem(110);
+    }
+
 }

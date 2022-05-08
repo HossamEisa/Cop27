@@ -6,7 +6,11 @@
 "abstract/functions",
 "abstract/mixins",
 "abstract/animations",
-"helpers/directions";
+
+
+// Helper
+"helpers/directions",
+"helpers/colors";
 
 ////////////////////////////////////////////////////////
 // 2. Vendors
@@ -58,5 +62,6 @@
 ////////////////////////////////////////////////////////
 // 6. Pages
 ////////////////////////////////////////////////////////
-@import "pages/home";
-@import "pages/introduction";
+@import "pages/home",
+"pages/introduction",
+"pages/news-details";

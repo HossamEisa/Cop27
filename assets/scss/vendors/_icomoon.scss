@@ -10,8 +10,7 @@
   font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -26,50 +25,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-export:before {
+  content: "\e90c";
+}
 .icon-play:before {
   content: "\e903";
 }
-
 .icon-dropdownarrow:before {
   content: "\e904";
 }
-
 .icon-clock:before {
   content: "\e905";
 }
-
 .icon-download-svgrepo-com:before {
   content: "\e906";
 }
-
 .icon-smrightarrow:before {
   content: "\e907";
 }
-
 .icon-longrightarrow:before {
   content: "\e908";
 }
-
 .icon-smleftarrow:before {
   content: "\e909";
 }
-
 .icon-Instagram:before {
   content: "\e90a";
 }
-
 .icon-linkedin:before {
   content: "\e90b";
 }
-
 .icon-facebook:before {
   content: "\e900";
 }
-
 .icon-twitter:before {
   content: "\e901";
 }
-
 .icon-youtube:before {
   content: "\e902";
 }
