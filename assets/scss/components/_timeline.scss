@@ -1,0 +1,59 @@
+$labelWidth: 86px;
+
+.timeline-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    .time-label {
+        background-color: $primary;
+        margin-#{$right}: 15px;
+        font-family: $medium-font;
+        border-radius: 4px;
+        color: $white;
+        padding: 6px 5px;
+        width: $labelWidth;
+        text-align: center;
+    }
+
+    .hr {
+        flex: 1 1 auto;
+        height: 2px;
+        background-color: #D9D9D9;
+    }
+}
+
+.timeline-content {
+
+    @include mq('md') {
+        padding-left: 35px;
+    }
+
+    @include mq('lg') {
+        padding-left: $labelWidth + 35px;
+    }
+}
+
+.schedule-download {
+    margin-top: calcRem(32);
+
+    a {
+        display: block;
+        margin-left: auto;
+
+        @include mq('md') {
+            margin-left: 35px;
+        }
+
+        @include mq('lg') {
+            width: auto;
+            margin-left: 0;
+            display: inline-block;
+        }
+    }
+
+    @include mq('lg') {
+        padding-left: $labelWidth + 35px;
+    }
+
+}

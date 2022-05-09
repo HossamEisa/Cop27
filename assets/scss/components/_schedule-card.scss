@@ -1,0 +1,60 @@
+.schedule-card {
+    padding: calcRem(25) calcRem(15);
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+    margin-bottom: 8px;
+
+    @include mq('sm') {
+        padding: calcRem(34) calcRem(28);
+    }
+
+
+    .card-title {
+        font-size: calcRem(22);
+        font-family: $bold-font;
+        line-height: 1.2;
+    }
+
+    .card-text {
+        font-size: calcRem(14);
+        line-height: 1.2;
+    }
+
+    .media {
+        align-items: center;
+        font-size: calcRem(14);
+        line-height: 1.2;
+
+        .m-title {
+            font-family: $bold-font;
+            margin-bottom: 5px;
+        }
+
+        .m-subtitle {
+            color: #7C7C7C;
+
+            @include mq('lg') {
+                width: 80%;
+            }
+        }
+
+        img {
+            max-width: 56px;
+        }
+    }
+
+    .speakers {
+        display: block;
+        font-size: calcRem(14);
+        color: #7C7C7C;
+    }
+}
