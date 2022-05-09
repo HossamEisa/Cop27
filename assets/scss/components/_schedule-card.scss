@@ -12,6 +12,18 @@
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 0.25rem;
     margin-bottom: 8px;
+    color: unset;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        color: unset;
+        text-decoration: none;
+        box-shadow: 0 0 10px #00000038;
+
+        .card-title {
+            text-decoration: underline;
+        }
+    }
 
     @include mq('sm') {
         padding: calcRem(34) calcRem(28);
