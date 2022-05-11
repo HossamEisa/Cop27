@@ -46,16 +46,28 @@ $bannerMBXL: calcRem(110);
     &::after {
         content: "";
         position: absolute;
-        background-color: rgba(0, 110, 183, 0.2);
+        background-color: rgba(0, 110, 183, 0.30);
         top: 0;
         bottom: 0;
         width: 100%;
         left: 0;
     }
 
+    &.low-blue-overlay {
+        &::after {
+            background-color: rgba(0, 110, 183, 0.08);
+        }
+    }
+
+    &.low-yellow-overlay {
+        &::after {
+            background-color: rgba(180, 139, 42, 0.08);
+        }
+    }
+
     &.yellow-overlay {
         &::after {
-            background-color: rgb(187 143 16 / 20%);
+            background-color: rgba(180, 139, 42, 0.3);
         }
     }
 }
