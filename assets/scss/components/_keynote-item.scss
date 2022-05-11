@@ -40,6 +40,7 @@
         font-size: calcRem(18);
         font-family: $medium-font;
         color: $dark;
+        margin-top: 5px;
 
         @include mq('md') {
             font-size: calcRem(20);

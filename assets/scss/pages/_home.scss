@@ -193,7 +193,7 @@
         }
 
         .ul-title {
-            font-size: calcRem(40);
+            font-size: calcRem(32);
             font-family: $bold-font;
             margin-bottom: 20px;
         }
@@ -203,7 +203,7 @@
             font-size: calcRem(16);
             font-family: $medium-font;
             text-decoration: underline;
-            margin-top: calcRem(40);
+            margin-top: calcRem(70);
             transition: 0.3s ease;
 
             &:hover {

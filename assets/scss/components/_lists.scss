@@ -1,6 +1,6 @@
 .ul-list {
     li {
-        font-family: $medium-font;
+        font-family: $primary-font;
         margin-bottom: 15px;
 
         a {
@@ -181,8 +181,8 @@
         position: relative;
         padding-left: 42px;
         margin-bottom: calcRem(25);
-        font-family: $medium-font;
-        font-size: calcRem(20);
+        font-family: $primary-font;
+        font-size: calcRem(16);
 
         &::before {
             counter-increment: numList;

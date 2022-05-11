@@ -1,4 +1,14 @@
 .introdaction-content {
+    padding-bottom: calcRem(60);
+
+    @include mq('lg') {
+        padding-bottom: calcRem(80);
+    }
+
+    @include mq('xl') {
+        padding-bottom: calcRem(100);
+    }
+
     .content {
         font-family: $medium-font;
         line-height: 1.4;
@@ -45,6 +55,7 @@
     &.warning {
         background-color: #FFF8E5;
     }
+
     &.success {
         background-color: #EFF6F0;
     }

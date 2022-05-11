@@ -1,3 +1,8 @@
+$bannerMBMob: calcRem(40);
+$bannerMBMD: calcRem(60);
+$bannerMBLG: calcRem(80);
+$bannerMBXL: calcRem(110);
+
 .banner-bk {
     position: relative;
     display: flex;
@@ -5,22 +10,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 250px;
-    margin-bottom: calcRem(40);
+    margin-bottom: $bannerMBMob;
 
     @include mq('md') {
-        margin-bottom: calcRem(60);
+        margin-bottom: $bannerMBMD;
         min-height: 350px;
-
     }
 
     @include mq('lg') {
-        margin-bottom: calcRem(80);
+        margin-bottom: $bannerMBLG;
     }
 
 
     @include mq('xl') {
         min-height: 576px;
-        margin-bottom: calcRem(110);
+        margin-bottom: $bannerMBXL;
     }
 
     .banner-title {
@@ -42,7 +46,7 @@
     &::after {
         content: "";
         position: absolute;
-        background-color: rgba(0, 110, 183, 0.35);
+        background-color: rgba(0, 110, 183, 0.2);
         top: 0;
         bottom: 0;
         width: 100%;
@@ -61,7 +65,7 @@
     display: flex;
     align-items: center;
     min-height: 250px;
-    margin-bottom: calcRem(40);
+    margin-bottom: $bannerMBMob;
     background-color: #E9F3EA;
     background-position: center right;
     background-repeat: no-repeat;
@@ -84,12 +88,12 @@
     }
 
     @include mq('md') {
-        margin-bottom: calcRem(60);
+        margin-bottom: $bannerMBMD;
         min-height: 350px;
     }
 
     @include mq('lg') {
-        margin-bottom: calcRem(80);
+        margin-bottom: $bannerMBLG;
         background-size: 50% 100%;
         color: $dark;
 
@@ -98,7 +102,7 @@
 
     @include mq('xl') {
         min-height: 500px;
-        margin-bottom: calcRem(110);
+        margin-bottom: $bannerMBXL;
         background-size: 700px 100%;
     }
 
@@ -137,25 +141,25 @@
     display: flex;
     align-items: center;
     min-height: 250px;
-    margin-bottom: calcRem(40);
+    margin-bottom: $bannerMBMob;
     background-color: #FFF8E5;
     color: $dark;
     padding: 25px 0;
 
     @include mq('md') {
-        margin-bottom: calcRem(60);
+        margin-bottom: $bannerMBMD;
         min-height: 350px;
     }
 
     @include mq('lg') {
-        margin-bottom: calcRem(80);
+        margin-bottom: $bannerMBLG;
 
     }
 
 
     @include mq('xl') {
         min-height: 500px;
-        margin-bottom: calcRem(110);
+        margin-bottom: $bannerMBXL;
     }
 
     .content {
@@ -196,26 +200,26 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: calcRem(40);
+    margin-bottom: $bannerMBMob;
 
     img {
         object-fit: cover;
     }
 
     @include mq('md') {
-        margin-bottom: calcRem(60);
+        margin-bottom: $bannerMBMD;
         min-height: 350px;
     }
 
     @include mq('lg') {
-        margin-bottom: calcRem(80);
+        margin-bottom: $bannerMBLG;
         color: $dark;
 
     }
 
     @include mq('xl') {
         min-height: 500px;
-        margin-bottom: calcRem(110);
+        margin-bottom: $bannerMBXL;
     }
 
 }

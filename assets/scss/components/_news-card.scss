@@ -74,6 +74,7 @@
             background-size: contain;
             background-repeat: no-repeat;
             transform: translate(-50%, 50%);
+            display: none;
         }
 
 
@@ -112,7 +113,7 @@
             font-family: $bold-font;
             line-height: 1.1;
             margin-bottom: 15px;
-            @include ellipse-rows(2);
+            @include ellipse-rows(3);
 
         }
 

@@ -27,7 +27,9 @@
 .text-xxxl {
     font-size: calcRem(23);
 }
-
+.font-r {
+    font-family: $primary-font;
+}
 .font-b {
     font-family: $bold-font;
 }
