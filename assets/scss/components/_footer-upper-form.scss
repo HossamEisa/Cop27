@@ -1,4 +1,4 @@
-.signup-section {
+.footer-upper-section {
 
     >.container {
         @media only screen and (max-width: 991px) {
@@ -9,7 +9,7 @@
     }
 }
 
-.signup-form {
+.footer-upper-form {
     background-color: $brand-color;
     position: relative;
     min-height: calcRem(289);
@@ -107,5 +107,9 @@
             }
         }
 
+    }
+
+    .btn-light {
+        color: $brand-color;
     }
 }
