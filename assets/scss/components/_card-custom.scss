@@ -144,3 +144,14 @@
         }
     }
 }
+
+// 
+.presidency-card {
+    border-radius: 4px;
+    border: 1px solid #DEDEDE;
+    padding: 25px;
+    .card-title {
+        font-size: calcRem(22);
+        font-family: $bold-font;
+    }
+}

@@ -1,8 +1,26 @@
 .footer {
-    padding: calcRem(28) 0 calcRem(20);
+    margin-top: 40px;
+
+    .container {
+        border-top: 2px solid #DEDEDE;
+        padding: 40px 0;
+    }
+
+    .footer-logo {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: calcRem(20);
+
+        .footer-logo-title {
+            font-family: $bold-font;
+        }
+    }
+
     .footer-copyright {
         font-family: $medium-font;
         margin: 0;
     }
- 
+
 }
