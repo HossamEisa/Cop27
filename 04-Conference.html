@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#00609C" />
+
+    <meta name="Author" content="Hossam Eissa">
+    <meta name="application-name" content="Cop">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Cop" />
+    <meta name="description" content="Test">
+    <title>Cop27</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+        #map {
+            height: 178px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="header fixed-top">
+            <div class="count-down-area">
+                <div class="container">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div id="countdown">
+                            <ul class="timer">
+                                <li><span class="icon-clock"></span> <span id="days"></span> <span
+                                        class="text">days</span></li>
+                                <li><span id="hours"></span><span class="text">Hours</span></li>
+                                <li><span id="minutes"></span><span class="text">Minutes</span></li>
+                                <li><span id="seconds"></span><span class="text">Seconds</span></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn btn-light btn-sm btn-schedule">View Schedule </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-1">
+                    <a class="navbar-brand mr-xl-5" href="index.html">
+                        <img src="./assets/images/logo.png" alt="" width="168">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#menuNavBar" aria-controls="menuNavBar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="menuNavBar">
+                        <ul class="navbar-nav flex-wrap  mr-auto">
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle d-lg-none" href="01-EG-Presidency.html"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    EG Presidency
+                                </a>
+                                <a class="nav-link  dropdown-toggle d-none d-lg-block" href="01-EG-Presidency.html">
+                                    EG Presidency
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li> <a class="dropdown-item"
+                                            href="01-EG-Presidency.html#introduction">Introduction</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="01-EG-Presidency.html#WhatisCOP">What is COP</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="01-EG-Presidency.html#Egypt-Climate">Egypt’s
+                                            Climate Leadership</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="01-EG-Presidency.html#COP27-Legacy">COP27
+                                            Legacy</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-lg-none" href="02-COP27-Goals.html"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    COP27 Goals
+                                </a>
+                                <a class="nav-link dropdown-toggle d-none d-lg-block" href="02-COP27-Goals.html">
+                                    COP27 Goals
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li> <a class="dropdown-item"
+                                            href="02-COP27-Goals.html#introduction">Introduction</a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="02-COP27-Goals.html#mitigation">Mitigation</a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="02-COP27-Goals.html#adaptation">Adaptation</a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="02-COP27-Goals.html#finance">Finance</a></li>
+                                    <li> <a class="dropdown-item"
+                                            href="02-COP27-Goals.html#collaboration">Collaboration</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-lg-none" href="04-Conference.html"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    Conference
+                                </a>
+                                <a class="nav-link dropdown-toggle d-none d-lg-block" href="04-Conference.html">
+                                    Conference
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li> <a class="dropdown-item" href="04-Conference.html#sharm-el-sheikh">Sharm
+                                            El-Sheikh</a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="04-Conference.html#venue">Venue</a></li>
+                                    <li> <a class="dropdown-item"
+                                            href="04-Conference.html#presidency-programme">Presidency-Programme</a></li>
+                                </ul>
+                            </li>
+                            <!--  -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-lg-none" href="03-Useful-Information.html"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    Useful Information
+                                </a>
+                                <a class="nav-link dropdown-toggle d-none d-lg-block" href="03-Useful-Information.html">
+                                    Useful Information
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li> <a class="dropdown-item" href="03-Useful-Information.html#visa">Visa</a>
+                                    </li>
+                                    <li> <a class="dropdown-item"
+                                            href="03-Useful-Information.html#accommodation">Accommodation</a></li>
+                                    <li> <a class="dropdown-item" href="03-Useful-Information.html#flights">Flights</a>
+                                    </li>
+                                    <li> <a class="dropdown-item disabled" href="03-Useful-Information.html">COVID-19
+                                            Measures</a></li>
+                                    <li> <a class="dropdown-item"
+                                            href="03-Useful-Information.html#transportation">Transportation</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <a href="#" class="btn btn-outline-warning my-2 my-sm-0 flex-shrink-0">Contact Us</a>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main id="main" class="main">
+            <div class="banner-bk" style="background-image: url('./assets/images/Vune.jpg')">
+                <div class="container">
+                    <h1 class="banner-title" data-aos="fade-up-right">Conference</h1>
+                </div>
+            </div>
+
+            <section class="introdaction-content overflow-hidden">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col-lg-11" data-aos="fade-right">
+                            <div class="content">
+                                <!-- Section -->
+                                <div id="sharm-el-sheikh" class="pb-5">
+                                    <h3 class="title">Sharm El Sheikh</h3>
+
+                                    <p class="font-m text-xxl">A City of Mangrove: A Natural Connection Between
+                                        Biodiversity and Climate</p>
+
+                                    <p>Sharm El Sheikh is the ideal destination to host an inclusive and sustainable
+                                        COP. Sharm El Sheikh has been committed to the green transformation having
+                                        achieved major strides in the adoption of sustainable accommodation,
+                                        transportation, energy, waste management and tourism operations.</p>
+
+                                    <p>Sharm El Sheikh has demonstrated a proven track record of hosting international
+                                        events and conferences, such as the Conference of the States Parties to the
+                                        United Nations Convention against Corruption (UNODC) and the Conference of the
+                                        Parties to the Convention on Biological Diversity (CBD COP14).</p>
+                                    <p>Surrounded by two spectacular protected areas, Sharm El Sheikh is a location that
+                                        will inspire attendees to tackle climate change and protect the planet. A
+                                        collection of pristine fringing reefs, an abundance of marine life nestled
+                                        between the jagged Sinai mountains provide endless exploration. In Sharm El
+                                        Sheikh, you can explore some of Egypt’s most unique natural environments, both
+                                        above and underwater, all the while contributing towards the conservation of
+                                        these habitats and enhancement of local livelihoods.</p>
+                                    <p>Protecting the health of both the participants at COP27 and the local community
+                                        of Sharm El Sheikh will be our utmost priority as the event is being planned,
+                                        with all safety precautions explored to ensure this.</p>
+                                    <p><a href="#" class="font-b link"><u>Explore ECO EGYPT
+                                                Experiences</u></a></p>
+                                </div>
+                                <!--/ Section -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mt-5">
+                        <div class="col-lg-8 pr-lg-4 pr-xl-4" data-aos="fade-right">
+                            <div class="content">
+                                <!-- Section -->
+                                <div id="venue">
+                                    <h3 class="title">Venue</h3>
+
+                                    <p>Sharm El Sheikh International Convention Center (SHICC) is one of the largest and
+                                        most innovative conferences centers in the Middle East and Africa. The SHICC can
+                                        be
+                                        reached within minutes from Sharm El Sheikh International Airport and boasts
+                                        advanced facilities and provides a host of technical services.</p>
+                                    <p>Established in 2006, the SHICC was designed to accommodate the region’s most
+                                        prominent events including the World Youth Forum (WYF), Conference of the States
+                                        Parties to the United Nations Convention against Corruption (UNODC) and the
+                                        Conference of the Parties to the Convention on Biological Diversity (CBD COP14).
+                                    </p>
+                                    <p>Overall, the conference complex has a variety of flexible conference and
+                                        exhibition
+                                        halls that will form the Blue Zone for COP27.</p>
+                                    <p>The Green Zone will be opposite the conference center and serve as an active
+                                        space
+                                        for youth groups, civil society, academia, artists, business from across Egypt,
+                                        Africa and all over the world to host events, exhibitions, cultural
+                                        performances,
+                                        workshops and talks.</p>
+                                </div>
+                                <!--/ Section -->
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4  mt-5 mt-lg-0 pl-xl-5" data-aos="fade-left">
+                            <div class="m">
+                                <div class="keynotes warning">
+                                    <h2 class="keynotes-title">Venue Information</h2>
+                                    <div id="map" class="border rounded"></div>
+                                    <h6 class="font-m text-xl mt-3">Four Seasons Resort Sharm El Sheikh</h6>
+                                    <p class="mt-3 mb-2">1 Four Seasons Boulevard, El-Salam, Qesm Sharm Al Sheikh, Egypt
+                                    </p>
+                                    <a class="text-body font-r" href="tel:+20(69)360-3555">Tel: +20 (69) 360-3555</a>
+                                </div>
+
+                                <div class="keynotes warning mt-5">
+                                    <h2 class="keynotes-title">Transportation</h2>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <div id="headingOne">
+                                                <h2 class="accordion-title collapsed" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="false"
+                                                    aria-controls="collapseOne">
+                                                    <img alt="..." src="./assets/images/icons/plane.png" width="24"
+                                                        height="24" class="mr-2">
+                                                    <span>
+                                                        Sharm Al Sheikh
+                                                        International airport</span>
+                                                </h2>
+                                            </div>
+
+                                            <div id="collapseOne" class="collapse " aria-labelledby="headingOne"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p> Content Content Conte ntContent Conten tContent Content Content
+                                                        Conte ntContent Content Content Content
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div id="headingTwo">
+                                                <h2 class="accordion-title collapsed" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    <img alt="..." src="./assets/images/icons/overtake.png" width="24"
+                                                        height="24" class="mr-2"> Other
+                                                    <span>Transportation</span>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p>Content Content Content Conte ntContent Conten tContent Content
+                                                        Content Conte ntContent Content Content Content</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mt-5 pt-lg-5">
+                        <div class="col-lg-11" data-aos="fade-right">
+                            <div class="content">
+                                <!-- Section -->
+                                <div id="presidency-programme">
+                                    <h3 class="title">Presidency Programme</h3>
+                                    <p>To achieve our climate goals, every company, every financial firm, every bank,
+                                        insurer and
+                                        investor will need to change.</p>
+                                    <div class="row no-gutters mt-5 pt-lg-4">
+                                        <!-- presidency-card -->
+                                        <div class="col-10 mx-auto">
+                                            <div class="presidency-card mb-2">
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span class="d-inline-flex align-items-center">
+                                                            <img alt="" src="./assets/images/calendar.png" width="18"
+                                                                height="18">
+                                                            <span class="ml-2">
+                                                                9 november, 2022
+                                                            </span></span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4 class="card-title">Science, Technology and Sustainable
+                                                            Cities</h4>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="" class="btn btn-primary">Discover More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /presidency-card -->
+
+                                        <!-- presidency-card -->
+                                        <div class="col-10 mx-auto">
+                                            <div class="presidency-card mb-2">
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span class="d-inline-flex align-items-center">
+                                                            <img alt="" src="./assets/images/calendar.png" width="18"
+                                                                height="18">
+                                                            <span class="ml-2">
+                                                                10 november, 2022
+                                                            </span></span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4 class="card-title">Youth and Civil Society</h4>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="" class="btn btn-primary">Discover More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /presidency-card -->
+
+                                        <!-- presidency-card -->
+                                        <div class="col-10 mx-auto">
+                                            <div class="presidency-card mb-2">
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span class="d-inline-flex align-items-center">
+                                                            <img alt="" src="./assets/images/calendar.png" width="18"
+                                                                height="18">
+                                                            <span class="ml-2">
+                                                                11 november, 2022
+                                                            </span></span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4 class="card-title">Women’s Empowerment and Gender Equality
+                                                        </h4>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="" class="btn btn-primary">Discover More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /presidency-card -->
+
+                                        <!-- presidency-card -->
+                                        <div class="col-10 mx-auto">
+                                            <div class="presidency-card mb-2">
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span class="d-inline-flex align-items-center">
+                                                            <img alt="" src="./assets/images/calendar.png" width="18"
+                                                                height="18">
+                                                            <span class="ml-2">
+                                                                12 november, 2022
+                                                            </span></span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4 class="card-title">Nature and Biodiversity</h4>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="" class="btn btn-primary">Discover More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /presidency-card -->
+
+
+                                        <!-- presidency-card -->
+                                        <div class="col-10 mx-auto">
+                                            <div class="presidency-card mb-2">
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span class="d-inline-flex align-items-center">
+                                                            <img alt="" src="./assets/images/calendar.png" width="18"
+                                                                height="18">
+                                                            <span class="ml-2">
+                                                                14 november, 2022
+                                                            </span></span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4 class="card-title">Adaptation</h4>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="" class="btn btn-primary">Discover More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /presidency-card -->
+
+                                        <!-- presidency-card -->
+                                        <div class="col-10 mx-auto">
+                                            <div class="presidency-card mb-2">
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span class="d-inline-flex align-items-center">
+                                                            <img alt="" src="./assets/images/calendar.png" width="18"
+                                                                height="18">
+                                                            <span class="ml-2">
+                                                                15 november, 2022
+                                                            </span></span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4 class="card-title">Climate Finance</h4>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="" class="btn btn-primary">Discover More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /presidency-card -->
+
+
+
+                                        <!-- presidency-card -->
+                                        <div class="col-10 mx-auto">
+                                            <div class="presidency-card mb-2">
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span class="d-inline-flex align-items-center">
+                                                            <img alt="" src="./assets/images/calendar.png" width="18"
+                                                                height="18">
+                                                            <span class="ml-2">
+                                                                16 november, 2022
+                                                            </span></span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4 class="card-title">Water</h4>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="" class="btn btn-primary">Discover More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /presidency-card -->
+
+                                        <!-- presidency-card -->
+                                        <div class="col-10 mx-auto">
+                                            <div class="presidency-card mb-2">
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span class="d-inline-flex align-items-center">
+                                                            <img alt="" src="./assets/images/calendar.png" width="18"
+                                                                height="18">
+                                                            <span class="ml-2">
+                                                                17 november, 2022
+                                                            </span></span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4 class="card-title">Energy</h4>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="" class="btn btn-primary">Discover More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /presidency-card -->
+                                    </div>
+                                </div>
+                                <!--/ Section -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center overflow-hidden">
+                    <div class="col-lg-3 col-sm-6 col-md-4 text-center text-md-left mb-4 mb-sm-0">
+                        <a href="#" title="Cop 27" class="footer-logo d-block">
+                            <img src="./assets/images/logos/footer-logo.svg" class="mr-3" alt="..." width="187">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-6">
+                        <p class="footer-copyright text-center" data-aos="fade-left"
+                            data-aos-anchor-placement="bottom-bottom">©
+                            2022
+                            All rights reserved</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                        <!-- /Nav link -->
+                        <ul class="justify-content-center justify-content-md-end nav-with-separator"
+                            data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+                            <li class="item">
+                                <a class="link" href="#">Covid 19 Protocol</a>
+                            </li>
+                            <li class="item">
+                                <a class="link" href="Contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <!-- /Nav link -->
+
+                    </div>
+                </div>
+        </footer>
+        <!-- /Footer -->
+
+        <h1 style="display: none;">Cop27</h1>
+        <div class="back-to-top">
+            <span class="icon-dropdownarrow"></span>
+        </div>
+        <div class="loader-container">
+            <div class="flex">
+                <div class="loader">
+                </div>
+            </div>
+            <div class="load-text">
+                Loading...
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+        defer></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/fancybox.umd.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: new google.maps.LatLng(27.956403, 34.391797),
+                zoom: 15,
+                disableDefaultUI: false,
+                mapTypeControl: false,
+                scaleControl: false,
+                zoomControl: false,
+                streetViewControl: false,
+            });
+            new google.maps.Marker({
+                position: new google.maps.LatLng(27.955903, 34.392797),
+                map,
+                title: "Four Seasons Resort",
+            });
+        }
+
+        window.initMap = initMap;
+    </script>
+</body>
+
+</html>

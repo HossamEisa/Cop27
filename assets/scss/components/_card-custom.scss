@@ -149,9 +149,11 @@
 .presidency-card {
     border-radius: 4px;
     border: 1px solid #DEDEDE;
-    padding: 25px;
+    padding: 23px;
+
     .card-title {
-        font-size: calcRem(22);
+        font-size: calcRem(21);
         font-family: $bold-font;
+        margin-bottom: 0;
     }
 }
