@@ -318,6 +318,18 @@
     overflow: hidden;
 }
 
+.travel-Accommodation {
+    background-color: #F7F9FA;
+    padding: calcRem(118) 0;
+
+    .separator {
+        height: 80%;
+        width: 2px;
+        background-color: rgba(112, 112, 112, 0.48);
+        margin: 0 auto;
+    }
+}
+
 
 // signUp Form Section
 
@@ -368,7 +380,7 @@
             margin: 0 auto 40px;
 
             @include mq('xl') {
-                width: 49%;
+                width: 75%;
             }
         }
 

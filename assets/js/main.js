@@ -179,5 +179,41 @@ var projectsSwiper = new Swiper(".projects-swiper", {
 
     $(document).ready(function () {
         $('select').niceSelect();
+
+
+
+        //smoothscroll
+        // $('#menuNavBar a[href^="#"]').on('click', function (e) {
+        //     e.preventDefault();
+
+        //     $('#menuNavBar a').each(function () {
+        //         $(this).removeClass('active');
+        //     })
+        //     $(this).addClass('active');
+
+        //     var target = this.hash,
+        //         menu = target,
+        //         $target = $(target);
+        //     $('html, body').stop().animate({
+        //         'scrollTop': $target.offset().top - 200
+        //     }, 1000, 'swing', function () {
+        //         window.location.hash = target;
+        //     });
+        // });
+
+
+        $('#menuNavBar a[href^="#"]').click(function () {
+            let itemID = $(this).prop('hash');
+            $('#menuNavBar a[href^="#"]').each(function () {
+                $(this).removeClass('active');
+            })
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $(itemID).offset().top - 160
+            }, 1000);
+                $(this).addClass('active');
+
+        });
+
+
     });
 })(jQuery);
