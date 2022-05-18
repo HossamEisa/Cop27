@@ -1,5 +1,6 @@
 .introdaction-content {
     padding-bottom: calcRem(60);
+    line-height: 1.4;
 
     @include mq('lg') {
         padding-bottom: calcRem(80);
@@ -9,23 +10,20 @@
         padding-bottom: calcRem(100);
     }
 
-    .content {
+
+    .title {
+        font-size: calcRem(28);
+        font-family: $bold-font;
         line-height: 1.4;
+        margin-bottom: 15px;
+    }
 
-        .title {
-            font-size: calcRem(28);
-            font-family: $bold-font;
-            line-height: 1.4;
-            margin-bottom: 15px;
-        }
+    p {
+        margin-bottom: calcRem(20);
+        font-family: $primary-font;
 
-        p {
-            margin-bottom: calcRem(20);
-            font-family: $primary-font;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
