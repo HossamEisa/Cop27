@@ -62,7 +62,7 @@
 
     .text {
         margin-bottom: 10px;
-        @include ellipse-rows(3);
+        @include ellipse-rows(4);
 
         @include mq('xl') {
             padding: 0px 25px 0 1px;
