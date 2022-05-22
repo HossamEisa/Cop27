@@ -2,6 +2,16 @@
     overflow: hidden;
     width: 100%;
 
+    .media-title {
+        font-size: calcRem(18);
+
+        @include mq('xl') {
+            font-size: 20px;
+        }
+        @include mq('xxl') {
+            max-width: 80%;
+        }
+    }
 
     @include mq('md') {
         padding-right: 0;
