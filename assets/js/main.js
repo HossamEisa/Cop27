@@ -178,6 +178,11 @@ var projectsSwiper = new Swiper(".projects-swiper", {
 
 
     $(document).ready(function () {
+        if (window.location.hash) {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $(window.location.hash).offset().top - 170
+            }, 1000);
+        }
         $('select').niceSelect();
 
         //smoothscroll
