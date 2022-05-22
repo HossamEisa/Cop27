@@ -41,7 +41,7 @@
     line-height: 1.5;
 
     @include mq('lg') {
-        min-height: 268px;
+        min-height: 230px;
     }
 
     @include mq('xl') {
