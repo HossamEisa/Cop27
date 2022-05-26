@@ -21,6 +21,7 @@
     p {
         margin-bottom: calcRem(20);
         font-family: $primary-font;
+        text-align: justify;
 
         &:last-child {
             margin-bottom: 0;
