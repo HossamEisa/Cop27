@@ -2,12 +2,12 @@
     -webkit-tap-highlight-color: transparent;
     background-color: #fff;
     border-radius: 5px;
-    border: solid 1px #19202F;
+    border: solid 1px #D4D4D4;
     box-sizing: border-box;
     clear: both;
     cursor: pointer;
     display: block;
-    float: left;
+    float: none;
     font-size: calcRem(20);
     font-family: $medium-font;
     height: 48px;
@@ -54,9 +54,9 @@
 }
 
 .nice-select.open:after {
-    -webkit-transform:  translate(-50%, -50%) rotate(-180deg);
-    -ms-transform:  translate(-50%, -50%) rotate(-180deg);
-    transform:  translate(-50%, -50%) rotate(-180deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-180deg);
+    -ms-transform: translate(-50%, -50%) rotate(-180deg);
+    transform: translate(-50%, -50%) rotate(-180deg);
 }
 
 .nice-select.open .list {

@@ -1,0 +1,24 @@
+.custom-uploader {
+
+
+    .custom-uploader-label {
+        border: 3px dashed #D4D4D4;
+        padding: calcRem(33);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .form-control-file {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        opacity: 0;
+    }
+
+
+}

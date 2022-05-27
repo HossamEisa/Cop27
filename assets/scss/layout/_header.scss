@@ -138,7 +138,10 @@
     .navbar-light .navbar-nav .nav-link.show,
     .navbar-light .navbar-nav .show>.nav-link {
         color: $primary;
-        border-bottom: 1px solid $primary;
+
+        @include mq('lg') {
+            border-bottom: 1px solid $primary;
+        }
     }
 
     .dropdown-menu {

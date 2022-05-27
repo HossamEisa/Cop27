@@ -1,0 +1,9 @@
+.custom-control-label {
+    font-size: calcRem(16);
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    background-image: none;
+}
+
