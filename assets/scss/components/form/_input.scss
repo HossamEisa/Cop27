@@ -3,3 +3,19 @@
     font-family: $medium-font;
     height: 48px;
 }
+
+input[type=date] {
+    // &::after {
+    //     content: "";
+    //     background: url('../images/calendar.png');
+    //     width: 20px;
+    //     height: 20px;
+    //     background-repeat: no-repeat;
+    // }
+
+    // &::-webkit-inner-spin-button,
+    // &::-webkit-calendar-picker-indicator {
+    //     display: none;
+    //     -webkit-appearance: none;
+    // }
+}
