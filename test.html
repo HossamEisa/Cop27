@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ar" dir="rtl">
 <head>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
@@ -41,11 +40,19 @@
     <div class="wrapper">
         <div>
             <label class="hide-content" for="searchModal">search key</label>
-            <input type="text" title="Search For Some Results" class="search-key" name="searchModal" placeholder="عن ماذا تبحث؟"
-                autocomplete="off" id="searchModal">
+            <input type="text" class="search-key" name="searchModal" placeholder="عن ماذا تبحث؟" autocomplete="off"
+                id="searchModal">
         </div>
 
         <h1 style="display: none;">Cop27</h1>
+
+        <div class="search-key-holder d-flex align-items-center flex-column">
+            <label class="hide-content">search key</label>
+            <input type="text" title="search for" class="search-key" name="search-key" placeholder="عن ماذا تبحث؟"
+                autocomplete="off">
+            <span class="d-none mt-1 red-text search-key-validation"> كلمة البحث لابد ان تكون اكثر من 3 حروف ولا تكون
+                كلها مسافات فقط</span>
+        </div>
 
     </div>
 
