@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
@@ -20,18 +21,11 @@
     <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <style>
-        .service-card .item {
-            height: 155px;
-            max-width: 100%;
-            position: relative;
+        .hide-content {
+            font-size: 0;
+            opacity: 0;
+            height: 0;
             overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            text-align: center;
-            transition: .5s width;
-            -webkit-transition: .5s width;
-            -moz-transition: .5s width;
         }
     </style>
 </head>
@@ -39,23 +33,13 @@
 <body>
     <div class="wrapper">
         <div>
-            <label class="hide-content" for="searchModal">search key</label>
-            <input type="text" class="search-key" name="searchModal" placeholder="عن ماذا تبحث؟" autocomplete="off"
-                id="searchModal">
+            <fieldset class="hide-content">
+                <legend>search key</legend>
+                <input type="text" class="search-key" name="searchModal" placeholder="عن ماذا تبحث؟" autocomplete="off"
+                    id="searchModal">
         </div>
-
         <h1 style="display: none;">Cop27</h1>
-
-        <div class="search-key-holder d-flex align-items-center flex-column">
-            <label class="hide-content">search key</label>
-            <input type="text" title="search for" class="search-key" name="search-key" placeholder="عن ماذا تبحث؟"
-                autocomplete="off">
-            <span class="d-none mt-1 red-text search-key-validation"> كلمة البحث لابد ان تكون اكثر من 3 حروف ولا تكون
-                كلها مسافات فقط</span>
-        </div>
-
     </div>
-
 </body>
 
 </html>
